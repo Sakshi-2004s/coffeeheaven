@@ -1,0 +1,104 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/coffee-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #f4c542;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+
+form {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #f4c542;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e0b93c;
+}
+
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  color: #fff;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
