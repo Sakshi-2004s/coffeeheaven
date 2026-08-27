@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Coffee Heaven - Menu</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
   <style>
     body {
-      background: url('images/homepage-bg.jpeg') no-repeat center center fixed;
+      background: url('homepage-bg.jpeg') no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
       color: #333;
@@ -47,103 +50,176 @@
     }
   </style>
 </head>
+
 <body>
 
   <header class="bg-dark text-white py-3">
     <h1>Our Menu</h1>
+
     <nav class="text-center">
       <a href="index.html" class="text-warning mx-2">Home</a>
       <a href="menu.html" class="text-warning mx-2">Menu</a>
       <a href="about.html" class="text-warning mx-2">About</a>
-       <a href="signup.php" class="text-warning mx-2">Sign Up</a>
+      <a href="signup.php" class="text-warning mx-2">Sign Up</a>
       <a href="login.php" class="text-warning mx-2">Login</a>
       <a href="logout.php" class="btn btn-danger">Logout</a>
-
-
-     
     </nav>
   </header>
 
   <main class="py-5">
+
     <div class="container menu-wrapper">
+
       <h2 class="text-center mb-4">Our Delicious Menu</h2>
+
       <div class="row g-4">
 
+        <!-- Espresso -->
         <div class="col-md-4 d-flex">
           <div class="card menu-card w-100">
-            <img src="images/espresso.jpeg" class="card-img-top" alt="Espresso">
+
+           <img src="https://coffeeheaven.infinityfreeapp.com/espresso.jpeg" class="card-img-top" alt="Espresso">
+
             <div class="card-body text-center">
               <h5 class="card-title">Espresso</h5>
-              <p class="card-text">Smooth espresso mixed with steamed milk.</p>
+              <p class="card-text">
+                Smooth espresso mixed with steamed milk.
+              </p>
+
               <div class="price">₹120</div>
-              <a href="check_session.php?product=Espresso&price=120&image=espresso.jpeg" class="btn btn-dark btn-lg mt-2">Order</a>
+
+              <a href="check_session.php?product=Espresso&price=120&image=espresso.jpeg"
+                 class="btn btn-dark btn-lg mt-2">
+                Order
+              </a>
             </div>
+
           </div>
         </div>
 
+
+        <!-- Latte -->
         <div class="col-md-4 d-flex">
           <div class="card menu-card w-100">
-            <img src="images/latte.jpeg" class="card-img-top" alt="Latte">
+
+         <img src="https://coffeeheaven.infinityfreeapp.com/latte.jpeg">
+
             <div class="card-body text-center">
               <h5 class="card-title">Latte</h5>
-              <p class="card-text">Strong and rich shot of pure coffee.</p>
+              <p class="card-text">
+                Strong and rich shot of pure coffee.
+              </p>
+
               <div class="price">₹150</div>
-             <a href="check_session.php?product=Latte&price=150&image=latte.jpeg" class="btn btn-dark btn-lg mt-2">Order</a>
+
+              <a href="check_session.php?product=Latte&price=150&image=latte.jpeg"
+                 class="btn btn-dark btn-lg mt-2">
+                Order
+              </a>
             </div>
+
           </div>
         </div>
 
+
+        <!-- Cappuccino -->
         <div class="col-md-4 d-flex">
           <div class="card menu-card w-100">
-            <img src="images/cappuccino.jpeg" class="card-img-top" alt="Cappuccino">
+
+            <img src="https://coffeeheaven.infinityfreeapp.com/cappuccino.jpeg">
+
             <div class="card-body text-center">
               <h5 class="card-title">Cappuccino</h5>
-              <p class="card-text">Classic Italian coffee with milk foam.</p>
+              <p class="card-text">
+                Classic Italian coffee with milk foam.
+              </p>
+
               <div class="price">₹140</div>
-           <a href="check_session.php?product=Cappuccino&price=140&image=cappuccino.jpeg" class="btn btn-dark btn-lg mt-2">Order</a>
+
+              <a href="check_session.php?product=Cappuccino&price=140&image=cappuccino.jpeg"
+                 class="btn btn-dark btn-lg mt-2">
+                Order
+              </a>
             </div>
+
           </div>
         </div>
 
+
+        <!-- Mocha -->
         <div class="col-md-4 d-flex">
           <div class="card menu-card w-100">
-            <img src="images/mocha.jpeg" class="card-img-top" alt="Mocha">
+
+           <img src="https://coffeeheaven.infinityfreeapp.com/mocha.jpeg">
+
             <div class="card-body text-center">
               <h5 class="card-title">Mocha</h5>
-              <p class="card-text">Perfect blend of coffee and chocolate.</p>
+              <p class="card-text">
+                Perfect blend of coffee and chocolate.
+              </p>
+
               <div class="price">₹160</div>
-              <a href="check_session.php?product=Mocha&price=160&image=mocha.jpeg" class="btn btn-dark btn-lg mt-2">Order</a>
+
+              <a href="check_session.php?product=Mocha&price=160&image=mocha.jpeg"
+                 class="btn btn-dark btn-lg mt-2">
+                Order
+              </a>
             </div>
+
           </div>
         </div>
 
+
+        <!-- Iced Coffee -->
         <div class="col-md-4 d-flex">
           <div class="card menu-card w-100">
-            <img src="images/cold brew.jpeg" class="card-img-top" alt="Cold Brew">
+
+           <img src="https://coffeeheaven.infinityfreeapp.com/cold%20brew.jpeg">
             <div class="card-body text-center">
               <h5 class="card-title">Iced Coffee</h5>
-              <p class="card-text">Chilled brew for a refreshing experience.</p>
+              <p class="card-text">
+                Chilled brew for a refreshing experience.
+              </p>
+
               <div class="price">₹130</div>
-            <a href="check_session.php?product=IcedCoffee&price=130&image=cold brew.jpeg" class="btn btn-dark btn-lg mt-2">Order</a>
+
+              <a href="check_session.php?product=IcedCoffee&price=130&image=cold brew.jpeg"
+                 class="btn btn-dark btn-lg mt-2">
+                Order
+              </a>
             </div>
+
           </div>
         </div>
 
+
+        <!-- Americano -->
         <div class="col-md-4 d-flex">
           <div class="card menu-card w-100">
-            <img src="images/americano.jpeg" class="card-img-top" alt="Americano">
+
+         <img src="https://coffeeheaven.infinityfreeapp.com/americano.jpeg">
+
             <div class="card-body text-center">
               <h5 class="card-title">Americano</h5>
-              <p class="card-text">Smooth coffee with a light flavor.</p>
+              <p class="card-text">
+                Smooth coffee with a light flavor.
+              </p>
+
               <div class="price">₹110</div>
-             <a href="check_session.php?product=Americano&price=110&image=americano.jpeg" class="btn btn-dark btn-lg mt-2">Order</a>
+
+              <a href="check_session.php?product=Americano&price=110&image=americano.jpeg"
+                 class="btn btn-dark btn-lg mt-2">
+                Order
+              </a>
             </div>
+
           </div>
         </div>
 
       </div>
     </div>
+
   </main>
 
 </body>
-</html> 
+</html>
