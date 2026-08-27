@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Coffee Heaven</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
     .hero {
       height: 80vh;
@@ -20,56 +21,74 @@
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Welcome to Coffee Heaven</h1>
+
     <nav class="text-center">
       <a href="index.html" class="text-warning mx-2">Home</a>
       <a href="menu.html" class="text-warning mx-2">Menu</a>
       <a href="about.html" class="text-warning mx-2">About</a>
-       <a href="signup.php" class="text-warning mx-2">Sign Up</a>
+      <a href="signup.php" class="text-warning mx-2">Sign Up</a>
       <a href="login.php" class="text-warning mx-2">Login</a>
-      
     </nav>
   </header>
 
   <main>
-    
+
     <div class="container">
       <div class="hero" id="hero-section"></div>
     </div>
 
     <section>
       <h2>Discover Your Favorite Coffee</h2>
-      <p>Enjoy freshly brewed coffee made from handpicked beans at Coffee Heaven.</p>
+      <p>
+        Enjoy freshly brewed coffee made from handpicked beans at Coffee Heaven.
+      </p>
     </section>
+
   </main>
 
   <script>
+
     const images = [
-      'images/homepage-bg.jpeg',
-      'images/h1.png',
-      'images/background1.jpeg',
-      'images/b1.jpeg'
+      'https://coffeeheaven.infinityfreeapp.com/homepage-bg.jpeg',
+      'https://coffeeheaven.infinityfreeapp.com/h1.png',
+      'https://coffeeheaven.infinityfreeapp.com/background1.jpeg',
+      'https://coffeeheaven.infinityfreeapp.com/b1.jpeg'
     ];
 
     let index = 0;
+
     const hero = document.getElementById('hero-section');
 
     function changeImage() {
+
       hero.classList.add("fade-out");
+
       setTimeout(() => {
+
         hero.style.backgroundImage = `url('${images[index]}')`;
+
         hero.classList.remove("fade-out");
+
         index = (index + 1) % images.length;
-      }, 400); 
+
+      }, 400);
+
     }
 
     window.onload = () => {
-      hero.style.backgroundImage = `url('${images[0]}')`;
-      setInterval(changeImage, 2000); 
-    };
-  </script>
-</body>
-</html> 
 
+      hero.style.backgroundImage = `url('${images[0]}')`;
+
+      setInterval(changeImage, 2000);
+
+    };
+
+  </script>
+
+</body>
+</html>
